@@ -9,19 +9,19 @@ cursor = Connection.cursor()
 # Query 1 select all records from the artist table
 # cursor.execute('SELECT * FROM "Artist"')
 
-# Query 1 select only the name colum from the artist table
+# Query 2 select only the name colum from the artist table
 # cursor.execute('SELECT "Name" FROM "Artist"')
 
-# Query 1 select only queen from the artist table
+# Query 3 select only queen from the artist table
 # cursor.execute('SELECT * FROM "Artist" WHERE "Name" = %s', ["Queen"])
 
-# Query 1 select only queen from the artist table
+# Query 4 select only queen from the artist table
 # cursor.execute('SELECT * FROM "Artist" WHERE "ArtistId" = %s', [51])
 
-# Query 1 select only queen from the artist table
+# Query 5 select only queen from the artist table
 # cursor.execute('SELECT * FROM "Album" WHERE "ArtistId" = %s', [51])
 
-# Query 1 select only queen from the artist table
+# Query 6 select only queen from the artist table
 cursor.execute('SELECT * FROM "Track" WHERE "Composer" = %s', ["Queen"])
 
 # fetch the results (multiple)
